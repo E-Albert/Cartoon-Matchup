@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cartoon Matchup</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Cartoon Matchup</h1>
     <!-- Form on opening page to select theme and grid size -->
+    <div id="background-img"></div>
     <div id="opening-page">
+        <h1>Cartoon Matchup</h1>
         <form id="form">
             <label for="show">Select a show:</label>
              <select id="show">
@@ -19,7 +24,7 @@
                 <option value="scoobydoo">Scooby Doo</option>
                 <option value="looneytunes">Looney Tunes</option>
              </select><br>
-             <label for="size">Grid difficulty: </label>
+             <label for="size">Grid difficulty:</label>
              <select id="size">
                 <option value="" disabled selected hidden>Choose...</option>
                 <option value="easy">Easy</option>

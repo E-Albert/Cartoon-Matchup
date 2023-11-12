@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Indie Flower', cursive;
+    margin: 0
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+    /* height: 100vh; */
+    position: relative;
+} 
+
+#background-img {
+    background: url(/assets/img/cartoon-3.jpeg) no-repeat center center/cover;
+    height: 100vh;
+    filter: blur(3px);
+    width: 100%;
+}
+
+#opening-page {
+    width: 80%;
+    height: 35%;
+    text-align: center;
+    border-radius: 15px;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 3px 3px 5px black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+} 
+
+label {
+    
+    display: inline-block;
+    width: 40%;
+    text-align: right;
+}
+
+select {
+    display: inline-block;
+    width: 49%;
+    margin-bottom: 10px;
+}
