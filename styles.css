@@ -17,7 +17,7 @@ body {
 #background-img {
     background: url(assets/img/cartoon-3.jpeg) no-repeat center center/cover;
     height: 100vh;
-    filter: blur(3px);
+    /* filter: blur(3px); */
     width: 100%;
 }
 
@@ -38,15 +38,23 @@ body {
     flex-direction: column;
 } 
 
+#opening-page h1 {
+    margin-bottom: 40px
+}
+
 label {
     
     display: inline-block;
-    width: 40%;
+    width:35%;
     text-align: right;
 }
 
 select {
     display: inline-block;
-    width: 49%;
+    width: 50%;
     margin-bottom: 10px;
+}
+
+#form-button {
+    margin-top: 5px
 }

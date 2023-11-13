@@ -16,7 +16,7 @@
         <h1>Cartoon Matchup</h1>
         <form id="form">
             <label for="show">Select a show:</label>
-             <select id="show">
+             <select id="show" required>
                 <option value=""disabled selected hidden>Choose...</option>
                 <option value="rugrats">Rugrats</option>
                 <option value="powerpuff">Powerpuff Girls</option>
@@ -24,14 +24,14 @@
                 <option value="scoobydoo">Scooby Doo</option>
                 <option value="looneytunes">Looney Tunes</option>
              </select><br>
-             <label for="size">Grid difficulty:</label>
-             <select id="size">
+             <label for="mode">Grid difficulty:</label>
+             <select id="mode" required>
                 <option value="" disabled selected hidden>Choose...</option>
                 <option value="easy">Easy</option>
                 <option value="medium">Medium</option>
                 <option value="hard">Hard</option>
              </select><br>
-             <button form="form" type="submit">Start</button>
+             <button id="form-button" form="form" type="submit">Start</button>
         </form>
     </div>
 
@@ -40,5 +40,6 @@
 
     </div>
 
+    <script src="script.js"></script>
 </body>
 </html>
