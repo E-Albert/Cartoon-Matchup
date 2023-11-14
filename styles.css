@@ -62,3 +62,13 @@ select {
 #form-button {
     margin-top: 5px
 }
+
+#card-container {
+    height: 50px;
+    background-color: red;
+   
+}
+
+.card {
+    height: 50px;
+}
