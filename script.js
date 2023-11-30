@@ -44,9 +44,9 @@ function populateGrid(show, mode) {
     let shuffledCards = randomShuffle(filteredArray)
     console.log(shuffledCards)
 
-    if (mode === 'easy') {
-        return shuffledCards.slice(0, 9)
-    }
+    // if (mode === 'easy') {
+    //     return shuffledCards.slice(0, 9)
+    // }
 
    
 //   if (show === "powerpuff") {
@@ -57,12 +57,13 @@ function populateGrid(show, mode) {
 //       let shuffledArray = randomShuffle(filteredArray)
 //       console.log(shuffledArray)
       
-    // for (i = 0; i < cards.length; i++) {
+  for (i = 0; i < filteredArray.length; i++) {
+      let cardIdentifier = filteredArray[i].img
 
-    //     const card = document.createElement("img");
-    //     card.setAttribute("src", `assets/cards/${i+1}.svg`);
-    //     card.setAttribute('class', 'card')
-    //     console.log(card)
-    //     cardContainer.appendChild(card);
-    // }
+        const card = document.createElement("img");
+        card.setAttribute("src", `${cardIdentifier}`);
+        card.setAttribute('class', 'card')
+        console.log(card)
+        cardContainer.appendChild(card);
+    }
 }

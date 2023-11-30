@@ -119,5 +119,125 @@ const cards = [
     img: "assets/cards/24.svg",
     show: "powerpuff",
   },
+  {
+    name: "ededdneddy-ed",
+    img: "assets/cards/26.svg",
+    show: "ededdneddy",
+  },
+  {
+    name: "ededdneddy-edd",
+    img: "assets/cards/27.svg",
+    show: "ededdneddy",
+  },
+  {
+    name: "ededdneddy-eddy",
+    img: "assets/cards/28.svg",
+    show: "ededdneddy",
+  },
+  {
+    name: "ededdneddy-sarah",
+    img: "assets/cards/29.svg",
+    show: "ededdneddy",
+  },
+  {
+    name: "ededdneddy-jimmy",
+    img: "assets/cards/30.svg",
+    show: "ededdneddy",
+  },
+  {
+    name: "ededdneddy-rolf",
+    img: "assets/cards/31.svg",
+    show: "ededdneddy",
+  },
+  {
+    name: "ededdneddy-nazz",
+    img: "assets/cards/32.svg",
+    show: "ededdneddy",
+  },
+  {
+    name: "ededdneddy-kevin",
+    img: "assets/cards/33.svg",
+    show: "ededdneddy",
+  },
+  {
+    name: "ededdneddy-jonny",
+    img: "assets/cards/34.svg",
+    show: "ededdneddy",
+  },
+  {
+    name: "ededdneddy-plank",
+    img: "assets/cards/35.svg",
+    show: "ededdneddy",
+  },
+  {
+    name: "ededdneddy-lee",
+    img: "assets/cards/36.svg",
+    show: "ededdneddy",
+  },
+  {
+    name: "ededdneddy-marie",
+    img: "assets/cards/37.svg",
+    show: "ededdneddy",
+  },
+  {
+    name: "ededdneddy-may",
+    img: "assets/cards/38.svg",
+    show: "ededdneddy",
+  },
+  {
+    name: "ededdneddy-bob",
+    img: "assets/cards/39.svg",
+    show: "ededdneddy",
+  },
+  {
+    name: "ededdneddy-eddysbrother",
+    img: "assets/cards/40.svg",
+    show: "ededdneddy",
+  },
+  {
+    name: "ededdneddy-wilfred",
+    img: "assets/cards/41.svg",
+    show: "ededdneddy",
+  },
+  {
+    name: "ededdneddy-captainmelonhead",
+    img: "assets/cards/42.svg",
+    show: "ededdneddy",
+  },
+  {
+    name: "ededdneddy-professorscam",
+    img: "assets/cards/43.svg",
+    show: "ededdneddy",
+  },
+  {
+    name: "ededdneddy-themaskedmumbler",
+    img: "assets/cards/44.svg",
+    show: "ededdneddy",
+  },
+  {
+    name: "ededdneddy-edzilla",
+    img: "assets/cards/45.svg",
+    show: "ededdneddy",
+  },
+  {
+    name: "ededdneddy-victor",
+    img: "assets/cards/46.svg",
+    show: "ededdneddy",
+  },
+  {
+    name: "ededdneddy-doubleg",
+    img: "assets/cards/47.svg",
+    show: "ededdneddy",
+  },
+  {
+    name: "ededdneddy-beefobaron",
+    img: "assets/cards/48.svg",
+    show: "ededdneddy",
+  },
+  {
+    name: "ededdneddy-superplank",
+    img: "assets/cards/49.svg",
+    show: "ededdneddy",
+  },
 ];
 
