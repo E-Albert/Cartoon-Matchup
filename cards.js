@@ -239,5 +239,125 @@ const cards = [
     img: "assets/cards/49.svg",
     show: "ededdneddy",
   },
+  {
+    name: "fosters-berry",
+    img: "assets/cards/51.svg",
+    show: "fosters",
+  },
+  {
+    name: "fosters-bendy",
+    img: "assets/cards/52.svg",
+    show: "fosters",
+  },
+  {
+    name: "fosters-bloo",
+    img: "assets/cards/53.svg",
+    show: "fosters",
+  },
+  {
+    name: "fosters-cheese",
+    img: "assets/cards/54.svg",
+    show: "fosters",
+  },
+  {
+    name: "fosters-coco",
+    img: "assets/cards/55.svg",
+    show: "fosters",
+  },
+  {
+    name: "fosters-duchess",
+    img: "assets/cards/56.svg",
+    show: "fosters",
+  },
+  {
+    name: "fosters-eduardo",
+    img: "assets/cards/57.svg",
+    show: "fosters",
+  },
+  {
+    name: "fosters-foullarry",
+    img: "assets/cards/58.svg",
+    show: "fosters",
+  },
+  {
+    name: "fosters-frankie",
+    img: "assets/cards/59.svg",
+    show: "fosters",
+  },
+  {
+    name: "fosters-goo",
+    img: "assets/cards/60.svg",
+    show: "fosters",
+  },
+  {
+    name: "fosters-mac",
+    img: "assets/cards/61.svg",
+    show: "fosters",
+  },
+  {
+    name: "fosters-madamefoster",
+    img: "assets/cards/62.svg",
+    show: "fosters",
+  },
+  {
+    name: "fosters-gregory",
+    img: "assets/cards/63.svg",
+    show: "fosters",
+  },
+  {
+    name: "fosters-boomer",
+    img: "assets/cards/64.svg",
+    show: "fosters",
+  },
+  {
+    name: "fosters-bone",
+    img: "assets/cards/65.svg",
+    show: "fosters",
+  },
+  {
+    name: "fosters-jackiekhones",
+    img: "assets/cards/66.svg",
+    show: "fosters",
+  },
+  {
+    name: "fosters-ivan",
+    img: "assets/cards/67.svg",
+    show: "fosters",
+  },
+  {
+    name: "fosters-terrance",
+    img: "assets/cards/68.svg",
+    show: "fosters",
+  },
+  {
+    name: "fosters-mrherriman",
+    img: "assets/cards/69.svg",
+    show: "fosters",
+  },
+  {
+    name: "fosters-wilt",
+    img: "assets/cards/70.svg",
+    show: "fosters",
+  },
+  {
+    name: "fosters-red",
+    img: "assets/cards/71.svg",
+    show: "fosters",
+  },
+  {
+    name: "fosters-scissors",
+    img: "assets/cards/72.svg",
+    show: "fosters",
+  },
+  {
+    name: "fosters-yogibooboo",
+    img: "assets/cards/73.svg",
+    show: "fosters",
+  },
+  {
+    name: "fosters-sassyfrass",
+    img: "assets/cards/74.svg",
+    show: "fosters",
+  },
 ];
 
