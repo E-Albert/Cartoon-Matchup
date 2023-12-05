@@ -359,5 +359,245 @@ const cards = [
     img: "assets/cards/74.svg",
     show: "fosters",
   },
+  {
+    name: "codename-one",
+    img: "assets/cards/76.svg",
+    show: "codename",
+  },
+  {
+    name: "codename-two",
+    img: "assets/cards/77.svg",
+    show: "codename",
+  },
+  {
+    name: "codename-three",
+    img: "assets/cards/78.svg",
+    show: "codename",
+  },
+  {
+    name: "codename-four",
+    img: "assets/cards/79.svg",
+    show: "codename",
+  },
+  {
+    name: "codename-five",
+    img: "assets/cards/80.svg",
+    show: "codename",
+  },
+  {
+    name: "codename-father",
+    img: "assets/cards/81.svg",
+    show: "codename",
+  },
+  {
+    name: "codename-stickybeard",
+    img: "assets/cards/82.svg",
+    show: "codename",
+  },
+  {
+    name: "codename-toiletnator",
+    img: "assets/cards/83.svg",
+    show: "codename",
+  },
+  {
+    name: "codename-countspankula",
+    img: "assets/cards/84.svg",
+    show: "codename",
+  },
+  {
+    name: "codename-knightbrace",
+    img: "assets/cards/85.svg",
+    show: "codename",
+  },
+  {
+    name: "codename-grandmastuffums",
+    img: "assets/cards/86.svg",
+    show: "codename",
+  },
+  {
+    name: "codename-commoncold",
+    img: "assets/cards/87.svg",
+    show: "codename",
+  },
+  {
+    name: "codename-mrboss",
+    img: "assets/cards/88.svg",
+    show: "codename",
+  },
+  {
+    name: "codename-professorxxxl",
+    img: "assets/cards/89.svg",
+    show: "codename",
+  },
+  {
+    name: "codename-crazyoldcatlady",
+    img: "assets/cards/90.svg",
+    show: "codename",
+  },
+  {
+    name: "codename-lydiagilligan",
+    img: "assets/cards/91.svg",
+    show: "codename",
+  },
+  {
+    name: "codename-creelincoln",
+    img: "assets/cards/92.svg",
+    show: "codename",
+  },
+  {
+    name: "codename-lizzie",
+    img: "assets/cards/93.svg",
+    show: "codename",
+  },
+  {
+    name: "codename-eigthysix",
+    img: "assets/cards/94.svg",
+    show: "codename",
+  },
+  {
+    name: "codename-delightfulchildren",
+    img: "assets/cards/95.svg",
+    show: "codename",
+  },
+  {
+    name: "codename-chaddickson",
+    img: "assets/cards/96.svg",
+    show: "codename",
+  },
+  {
+    name: "codename-tommygilligan",
+    img: "assets/cards/97.svg",
+    show: "codename",
+  },
+  {
+    name: "codename-hamsters",
+    img: "assets/cards/98.svg",
+    show: "codename",
+  },
+  {
+    name: "codename-kingsandy",
+    img: "assets/cards/99.svg",
+    show: "codename",
+  },
+  {
+    name: "looney-bugsbunny",
+    img: "assets/cards/101.svg",
+    show: "looneytunes",
+  },
+  {
+    name: "looney-daffyduck",
+    img: "assets/cards/102.svg",
+    show: "looneytunes",
+  },
+  {
+    name: "looney-elmerfudd",
+    img: "assets/cards/103.svg",
+    show: "looneytunes",
+  },
+  {
+    name: "looney-granny",
+    img: "assets/cards/104.svg",
+    show: "looneytunes",
+  },
+  {
+    name: "looney-pepelepew",
+    img: "assets/cards/105.svg",
+    show: "looneytunes",
+  },
+  {
+    name: "looney-porkypig",
+    img: "assets/cards/106.svg",
+    show: "looneytunes",
+  },
+  {
+    name: "looney-roadrunner",
+    img: "assets/cards/107.svg",
+    show: "looneytunes",
+  },
+  {
+    name: "looney-speedygonzales",
+    img: "assets/cards/108.svg",
+    show: "looneytunes",
+  },
+  {
+    name: "looney-sylvester",
+    img: "assets/cards/109.svg",
+    show: "looneytunes",
+  },
+  {
+    name: "looney-tasmaniandevil",
+    img: "assets/cards/110.svg",
+    show: "looneytunes",
+  },
+  {
+    name: "looney-tweety",
+    img: "assets/cards/111.svg",
+    show: "looneytunes",
+  },
+  {
+    name: "looney-wileecoyote",
+    img: "assets/cards/112.svg",
+    show: "looneytunes",
+  },
+  {
+    name: "looney-yosemitesam",
+    img: "assets/cards/113.svg",
+    show: "looneytunes",
+  },
+  {
+    name: "looney-gossamer",
+    img: "assets/cards/114.svg",
+    show: "looneytunes",
+  },
+  {
+    name: "looney-marvinthemartian",
+    img: "assets/cards/115.svg",
+    show: "looneytunes",
+  },
+  {
+    name: "looney-foghornleghorn",
+    img: "assets/cards/116.svg",
+    show: "looneytunes",
+  },
+  {
+    name: "looney-witchhazel",
+    img: "assets/cards/117.svg",
+    show: "looneytunes",
+  },
+  {
+    name: "looney-heneryhawk",
+    img: "assets/cards/118.svg",
+    show: "looneytunes",
+  },
+  {
+    name: "looney-penelopepussycat",
+    img: "assets/cards/119.svg",
+    show: "looneytunes",
+  },
+  {
+    name: "looney-charliedog",
+    img: "assets/cards/120.svg",
+    show: "looneytunes",
+  },
+  {
+    name: "looney-petuniapig",
+    img: "assets/cards/121.svg",
+    show: "looneytunes",
+  },
+  {
+    name: "looney-hectorthebulldog",
+    img: "assets/cards/122.svg",
+    show: "looneytunes",
+  },
+  {
+    name: "looney-hippetyhopper",
+    img: "assets/cards/123.svg",
+    show: "looneytunes",
+  },
+  {
+    name: "looney-lolabunny",
+    img: "assets/cards/124.svg",
+    show: "looneytunes",
+  },
 ];
 
