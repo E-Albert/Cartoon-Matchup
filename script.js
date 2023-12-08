@@ -19,6 +19,7 @@ form.addEventListener("submit", function (e) {
   console.log("Form button is responding");
 
   form.classList.toggle("active");
+  openingPage.classList.toggle("active")
   populateGrid(show, mode);
 });
 
@@ -32,33 +33,39 @@ function randomShuffle(array) {
 }
 
 function populateGrid(show, mode) {
-    //filter cards
-    //slice cards
-    //double cards
-    //randomize cards
-    //return cards
-    let filteredArray = cards.filter((card) => card.show === show);
+  
+  let slicedCards = []
+  
+  //filter cards
+  let filteredArray = cards.filter((card) => card.show === show);
+  
+  console.log(filteredArray)
+  
+  //randomize cards
+  let shuffledCards = randomShuffle(filteredArray)
+  console.log(shuffledCards)
+  
+  //slice cards
+  if (mode === 'easy') {
+    slicedCards.push(shuffledCards.slice(0, 9))
+  } else if (mode === 'medium') {
+    slicedCards.push(shuffledCards.slice(0,14))
+  } else {
+    slicedCards.push(shuffledCards)
+  }                                  
+  
+  console.log(slicedCards)
+  
+  //double cards
+  let fullDeck = slicedCards.concat(slicedCards).flat()
+  console.log(fullDeck)
 
-    console.log(filteredArray)
-
-    let shuffledCards = randomShuffle(filteredArray)
-    console.log(shuffledCards)
-
-    // if (mode === 'easy') {
-    //     return shuffledCards.slice(0, 9)
-    // }
-
-   
-//   if (show === "powerpuff") {
-//        filteredArray = cards.filter((card) => card.show === "powerpuff");
-//       console.log(filteredArray)
-//     }
-
-//       let shuffledArray = randomShuffle(filteredArray)
-//       console.log(shuffledArray)
-      
-  for (i = 0; i < filteredArray.length; i++) {
-      let cardIdentifier = filteredArray[i].img
+  //randomize cards
+  let finalDeck = randomShuffle(fullDeck)
+  console.log(finalDeck)
+  
+  for (i = 0; i < finalDeck.length; i++) {
+      let cardIdentifier = finalDeck[i].img
 
         const card = document.createElement("img");
         card.setAttribute("src", `${cardIdentifier}`);

@@ -36,10 +36,15 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    transition: 1.5s;
 } 
 
 #opening-page h1 {
     margin-bottom: 40px
+}
+
+#opening-page.active {
+    height: 80%
 }
 
 #form.active {
@@ -64,11 +69,16 @@ select {
 }
 
 #card-container {
-    height: 50px;
+    height: 95%;
     background-color: red;
-   
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    overflow: scroll;
 }
 
+
 .card {
-    height: 50px;
+    height: 150px;
+    flex: 1 0 11%;
 }
