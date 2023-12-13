@@ -120,6 +120,10 @@ const cards = [
     show: "powerpuff",
   },
   {
+    name: "powerpuff-logo",
+    img: "assets/cards/25.svg"
+  },
+  {
     name: "ededdneddy-ed",
     img: "assets/cards/26.svg",
     show: "ededdneddy",
@@ -238,6 +242,10 @@ const cards = [
     name: "ededdneddy-superplank",
     img: "assets/cards/49.svg",
     show: "ededdneddy",
+  },
+  {
+    name: "ededdneddy-logo",
+    img: "assets/cards/50.svg"
   },
   {
     name: "fosters-berry",
@@ -360,6 +368,10 @@ const cards = [
     show: "fosters",
   },
   {
+    name: "fosters-logo",
+    img: "assets/cards/75.svg"
+  },
+  {
     name: "codename-one",
     img: "assets/cards/76.svg",
     show: "codename",
@@ -478,6 +490,10 @@ const cards = [
     name: "codename-kingsandy",
     img: "assets/cards/99.svg",
     show: "codename",
+  },
+  {
+    name: "codename-logo",
+    img: "assets/cards/100.svg"
   },
   {
     name: "looney-bugsbunny",
@@ -599,5 +615,9 @@ const cards = [
     img: "assets/cards/124.svg",
     show: "looneytunes",
   },
+  {
+    name: "looney-logo",
+    img: "assets/cards/125.svg"
+  }
 ];
 

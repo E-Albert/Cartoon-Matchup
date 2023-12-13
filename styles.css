@@ -69,16 +69,19 @@ select {
 }
 
 #card-container {
-    height: 95%;
+    height: 60%;
+    width: 100%;
+    padding: 5px;
     background-color: red;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     overflow: scroll;
+    align-content: center
 }
 
 
 .card {
-    height: 150px;
-    flex: 1 0 11%;
+    height: 90px;
+    flex: 1 0 22%;
 }
