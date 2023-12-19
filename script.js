@@ -7,6 +7,9 @@ let openingPage = document.querySelector("#opening-page");
 let show;
 let mode;
 let cardsDisplayed;
+let backOfCard;
+let cardsChosen = []
+let cardsChosenId = []
 
 //event listeners
 form.addEventListener("submit", function (e) {
@@ -35,7 +38,6 @@ function randomShuffle(array) {
 
 function populateGrid(show, mode) {
 
-  let backOfCard;
   switch (show) {
     case "powerpuff": backOfCard = "assets/cards/25.svg";
       break;
@@ -98,7 +100,51 @@ function populateGrid(show, mode) {
 
 function flippedCard() {
   const cardIdentity = this.getAttribute('card-Id')
+  cardsChosen.push(cardsDisplayed[cardIdentity].name)
+  cardsChosenId.push(cardIdentity)
   console.log(cardIdentity)
+  console.log(cardsChosen)
+  console.log(cardsChosenId)
   
   this.setAttribute('src', cardsDisplayed[cardIdentity].img)
+
+  if (cardsChosen.length === 2) {
+    setTimeout(checkMatch, 500)
+  }
+}
+
+function checkMatch() {
+  const theCards = document.querySelectorAll("img");
+  let cardOne = cardsChosenId[0]
+  let cardTwo = cardsChosenId[1]
+  console.log(backOfCard)
+
+  console.log(theCards)
+  if (cardOne === cardTwo) {
+    alert('you clicked the same card twice')
+    theCards[cardOne].setAttribute("src", `${backOfCard}`);
+    theCards[cardTwo].setAttribute("src", `${backOfCard}`);
+    cardsChosen = [];
+    cardsChosenId = [];
+    return
+  }
+  if (
+    cardsChosen[0] === cardsChosen[1]) {
+    alert("these cards match");
+    theCards[cardOne].removeEventListener("click", flippedCard);
+    theCards[cardTwo].removeEventListener("click", flippedCard);
+    cardsChosen = [];
+    cardsChosenId = [];
+  } else {
+    alert("dang try again");
+    // theCards[cardOne].src =`${backOfCard}`
+    // theCards[cardTwo].src = `${backOfCard}`
+    theCards[cardOne].setAttribute("src", `${backOfCard}`);
+    theCards[cardTwo].setAttribute("src", `${backOfCard}`);
+    cardsChosen = [];
+    cardsChosenId = [];
+  }
+
+  // cardsChosen = []
+  // cardsChosenId = []
 }
