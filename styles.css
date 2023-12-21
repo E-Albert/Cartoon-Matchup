@@ -40,11 +40,12 @@ body {
 } 
 
 #opening-page h1 {
-    margin-bottom: 40px
+    margin-bottom: 0px
 }
 
 #opening-page.active {
-    height: 80%
+    height: 80%;
+    width: 95%;
 }
 
 #form.active {
@@ -76,7 +77,8 @@ select {
     flex-wrap: wrap;
     gap: 10px;
     overflow: scroll;
-    align-content: center
+    align-content: center;
+    margin-bottom: 10px;
 }
 
 
@@ -87,8 +89,13 @@ select {
 /* 
     height: 63px;
     flex: 1 0 17% */
+
+    /* height: 44px;
+    flex: 1 0 12%; */
 }
 
 #reset {
     display: none;
+    width: 25%;
+    margin: 0 auto
 }

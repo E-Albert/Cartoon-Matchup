@@ -109,7 +109,8 @@ function populateGrid(show, mode) {
       card.style.height = "63px";
       card.style.flex = "1 0 17%";
     } else {
-      console.log('this is hard mode bucko')
+      card.style.height = "44px";
+      card.style.flex = "1 0 12%";
     }
     cardContainer.appendChild(card);
 
