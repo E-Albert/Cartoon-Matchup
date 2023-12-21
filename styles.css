@@ -84,3 +84,7 @@ select {
     height: 90px;
     flex: 1 0 22%;
 }
+
+#reset {
+    display: none;
+}

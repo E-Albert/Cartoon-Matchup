@@ -2,6 +2,7 @@
 let form = document.querySelector("#form");
 let cardContainer = document.querySelector("#card-container");
 let openingPage = document.querySelector("#opening-page");
+let resetButton = document.querySelector("#reset")
 
 // global variables
 let show;
@@ -24,8 +25,16 @@ form.addEventListener("submit", function (e) {
 
   form.classList.toggle("active");
   openingPage.classList.toggle("active")
+  resetButton.style.display = 'block'
   populateGrid(show, mode);
 });
+
+resetButton.addEventListener("click", function () {
+  form.classList.toggle("active");
+  openingPage.classList.toggle("active");
+  cardContainer.innerHTML = ''
+  resetButton.style.display = "none";
+})
 
 //functions
 function randomShuffle(array) {
