@@ -72,9 +72,9 @@ function populateGrid(show, mode) {
   
   //slice cards
   if (mode === 'easy') {
-    slicedCards.push(shuffledCards.slice(0, 8))
+    slicedCards.push(shuffledCards.slice(0, 8));
   } else if (mode === 'medium') {
-    slicedCards.push(shuffledCards.slice(0,15))
+    slicedCards.push(shuffledCards.slice(0, 15))
   } else {
     slicedCards.push(shuffledCards)
   }                                  
@@ -101,9 +101,21 @@ function populateGrid(show, mode) {
     card.setAttribute('card-Id', i)
     card.addEventListener('click', flippedCard)
     // console.log(card)
+
+    if (mode === 'easy') {
+      card.style.height = "90px";
+      card.style.flex = "1 0 22%";
+    } else if (mode === 'medium') {
+      card.style.height = "63px";
+      card.style.flex = "1 0 17%";
+    } else {
+      console.log('this is hard mode bucko')
+    }
     cardContainer.appendChild(card);
 
   }
+  
+  // if (mode === )
   // cardIdentifier;
 }
 

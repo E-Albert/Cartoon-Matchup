@@ -81,8 +81,12 @@ select {
 
 
 .card {
-    height: 90px;
-    flex: 1 0 22%;
+    /* easy mode */
+    /* height: 90px;
+    flex: 1 0 22%; */
+/* 
+    height: 63px;
+    flex: 1 0 17% */
 }
 
 #reset {
