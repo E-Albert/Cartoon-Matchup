@@ -121,6 +121,7 @@ function populateGrid(show, mode) {
 }
 
 function flippedCard() {
+  this.classList.toggle("flipped")
   const cardIdentity = this.getAttribute('card-Id')
   cardsChosen.push(cardsDisplayed[cardIdentity].name)
   cardsChosenId.push(cardIdentity)
@@ -165,6 +166,8 @@ function checkMatch() {
     // theCards[cardTwo].src = `${backOfCard}`
     theCards[cardOne].setAttribute("src", `${backOfCard}`);
     theCards[cardTwo].setAttribute("src", `${backOfCard}`);
+    theCards[cardOne].classList.toggle("flipped");
+    theCards[cardTwo].classList.toggle("flipped");
     cardsChosen = [];
     cardsChosenId = [];
   }
@@ -179,6 +182,10 @@ function checkMatch() {
     let wrongSoundAudio = document.querySelector('#wrongSound')
     wrongSoundAudio.play()
   }
+
+  // function flipCard() {
+  //   card.classList.toggle('flipped')
+  // }
   // cardsChosen = []
   // cardsChosenId = []
 }

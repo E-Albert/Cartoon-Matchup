@@ -92,6 +92,13 @@ select {
 
     /* height: 44px;
     flex: 1 0 12%; */
+
+    perspective: 1000px;
+    transition: transform 0.6s
+}
+
+.card.flipped {
+    transform: rotateY(360deg)
 }
 
 #reset {
