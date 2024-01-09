@@ -152,12 +152,14 @@ function checkMatch() {
   }
   if (
     cardsChosen[0] === cardsChosen[1]) {
+      playCorrectSound()
     alert("these cards match");
     theCards[cardOne].removeEventListener("click", flippedCard);
     theCards[cardTwo].removeEventListener("click", flippedCard);
     cardsChosen = [];
     cardsChosenId = [];
   } else {
+    playWrongSound()
     alert("dang try again");
     // theCards[cardOne].src =`${backOfCard}`
     // theCards[cardTwo].src = `${backOfCard}`
@@ -167,6 +169,16 @@ function checkMatch() {
     cardsChosenId = [];
   }
 
+
+  function playCorrectSound() {
+    let correctSoundAudio = document.querySelector('#correctSound')
+    correctSoundAudio.play()
+  }
+
+  function playWrongSound() {
+    let wrongSoundAudio = document.querySelector('#wrongSound')
+    wrongSoundAudio.play()
+  }
   // cardsChosen = []
   // cardsChosenId = []
 }
