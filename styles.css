@@ -70,15 +70,15 @@ select {
 }
 
 #card-container {
-    height: 65%;
+    height: 80%;
     width: 100%;
     padding: 5px;
+    overflow: scroll;
+    margin-bottom: 10px;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    overflow: scroll;
     align-content: center;
-    margin-bottom: 10px;
+    gap: 10px; 
 }
 
 
@@ -94,7 +94,7 @@ select {
     flex: 1 0 12%; */
 
     perspective: 1000px;
-    transition: transform 0.6s
+    transition: transform 0.6s;
 }
 
 .card.flipped {

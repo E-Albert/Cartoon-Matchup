@@ -109,8 +109,8 @@ function populateGrid(show, mode) {
       card.style.height = "63px";
       card.style.flex = "1 0 17%";
     } else {
-      card.style.height = "44px";
-      card.style.flex = "1 0 10%";
+      card.style.height = "58px";
+      card.style.flex = "1 0 11%";
     }
     cardContainer.appendChild(card);
 
