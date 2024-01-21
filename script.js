@@ -19,10 +19,6 @@ form.addEventListener("submit", function (e) {
   show = document.querySelector("#show").value;
   mode = document.querySelector("#mode").value;
 
-  console.log("Show: " + show);
-  console.log("Mode: " + mode);
-  console.log("Form button is responding");
-
   form.classList.toggle("active");
   openingPage.classList.toggle("active")
   resetButton.style.display = 'block'
@@ -46,7 +42,6 @@ function randomShuffle(array) {
 }
 
 function populateGrid(show, mode) {
-
   switch (show) {
     case "powerpuff": backOfCard = "assets/cards/25.svg";
       break;
@@ -64,12 +59,9 @@ function populateGrid(show, mode) {
   //filter cards
   let filteredArray = cards.filter((card) => card.show === show);
   
-  console.log(filteredArray)
-  
   //randomize cards
   let shuffledCards = randomShuffle(filteredArray)
-  console.log(shuffledCards)
-  
+
   //slice cards
   if (mode === 'easy') {
     slicedCards.push(shuffledCards.slice(0, 8));
@@ -79,19 +71,14 @@ function populateGrid(show, mode) {
     slicedCards.push(shuffledCards)
   }                                  
   
-  console.log(slicedCards)
-  
   //double cards
   let fullDeck = slicedCards.concat(slicedCards).flat()
-  console.log(fullDeck)
 
   //randomize cards
   let finalDeck = randomShuffle(fullDeck)
   cardsDisplayed = finalDeck
-  console.log(cardsDisplayed)
-  console.log(finalDeck)
-
   
+  //creating, styling, and displaying cards on board
   for (i = 0; i < finalDeck.length; i++) {
     let cardIdentifier = finalDeck[i].img
     
@@ -100,7 +87,6 @@ function populateGrid(show, mode) {
     card.setAttribute('class', 'card')
     card.setAttribute('card-Id', i)
     card.addEventListener('click', flippedCard)
-    // console.log(card)
 
     if (mode === 'easy') {
       card.style.height = "90px";
@@ -115,9 +101,6 @@ function populateGrid(show, mode) {
     cardContainer.appendChild(card);
 
   }
-  
-  // if (mode === )
-  // cardIdentifier;
 }
 
 function flippedCard() {
@@ -125,9 +108,6 @@ function flippedCard() {
   const cardIdentity = this.getAttribute('card-Id')
   cardsChosen.push(cardsDisplayed[cardIdentity].name)
   cardsChosenId.push(cardIdentity)
-  console.log(cardIdentity)
-  console.log(cardsChosen)
-  console.log(cardsChosenId)
   
   this.setAttribute('src', cardsDisplayed[cardIdentity].img)
 
@@ -140,9 +120,7 @@ function checkMatch() {
   const theCards = document.querySelectorAll("img");
   let cardOne = cardsChosenId[0]
   let cardTwo = cardsChosenId[1]
-  console.log(backOfCard)
 
-  console.log(theCards)
   if (cardOne === cardTwo) {
     alert('you clicked the same card twice')
     theCards[cardOne].setAttribute("src", `${backOfCard}`);
@@ -154,16 +132,12 @@ function checkMatch() {
   if (
     cardsChosen[0] === cardsChosen[1]) {
       playCorrectSound()
-    alert("these cards match");
     theCards[cardOne].removeEventListener("click", flippedCard);
     theCards[cardTwo].removeEventListener("click", flippedCard);
     cardsChosen = [];
     cardsChosenId = [];
   } else {
     playWrongSound()
-    alert("dang try again");
-    // theCards[cardOne].src =`${backOfCard}`
-    // theCards[cardTwo].src = `${backOfCard}`
     theCards[cardOne].setAttribute("src", `${backOfCard}`);
     theCards[cardTwo].setAttribute("src", `${backOfCard}`);
     theCards[cardOne].classList.toggle("flipped");
@@ -171,6 +145,7 @@ function checkMatch() {
     cardsChosen = [];
     cardsChosenId = [];
   }
+}
 
 
   function playCorrectSound() {
@@ -182,10 +157,3 @@ function checkMatch() {
     let wrongSoundAudio = document.querySelector('#wrongSound')
     wrongSoundAudio.play()
   }
-
-  // function flipCard() {
-  //   card.classList.toggle('flipped')
-  // }
-  // cardsChosen = []
-  // cardsChosenId = []
-}
