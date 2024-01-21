@@ -106,3 +106,15 @@ select {
     width: 25%;
     margin: 0 auto
 }
+
+@media only screen and (min-width: 600px) {
+  /* For desktop: */
+  #card-container {
+    width: 50%;
+    margin: 0 auto
+}
+
+#opening-page.active {
+    height: 95%
+}
+}
